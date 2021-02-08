@@ -1,0 +1,66 @@
+Boxing: 31.07
+Muay Thai: 6
+BJJ: 124.21
+Judo: 8.5
+Weights: 744.42
+Stretching/Mobility/Yoga: 54.42
+Meditating: 9.77
+Running: 171.54 (Total: 1429.63km)
+Rowing: 10.48 (Total: 126.90km)
+Cycling/Cross Trainer: 15.03 (Total: 185.37km)
+Hiking: 129.40 (Total: 303.07km)
+C and C++: 9.68
+Ruby: 37.39
+Python: 29.17
+Javascript/Web Design: 21.66
+Database & SQL: 15.57
+Networking: 36.01
+Maths: 7.11
+Physics: 0.5
+Excel/VBA: 2.25
+Windows Cert/Powershell: 67.17
+SysAdmin: 8.26
+ServiceNow: 1.83
+Maker: 0.33
+Linux: 6.84
+General Algorithms: 6.99
+Data Science: 4.18
+Machine Learning: 37.95
+IT Security: 1
+Masters Degree: 1436.41
+General Reading: 214.07
+Learning: 18.54
+Politics: 51.2
+History: 26.3
+Guitar: 44.3
+Medicine/Psych: 5.7
+Photography:
+Mechanics:
+Japanese: 0.15
+Portuguese: 34.74
+Tagalog:
+Indonesian: 6.23
+Business & Economics: 6.14
+Cooking: 3.75
+Work Training: 6.84
+Work - Service Centre: 327
+Work - DWT: 1025.13
+Driving: 297.54
+Active Recreation 2020: 4
+Social Time 2020: 51
+Active Recreation 2019: 226.25
+Social Time 2019: 201.5
+Game Design: 1.2
+Haskell: 0.33
+Distributed Systems: 123.2
+Knowledge Technologies: 130.53
+Declarative Programming: 96.95
+Cryptography & Security: 182.80
+Web Search and Text Analysis: 178.64
+Thinking and Reasoning with Data: 97.19
+Statistical Machine Learning: 111.97
+Research Methods: 42.24
+Cognitive Computing & Research: 209.13
+Cloud & Cluster Computing: 154.16
+Parallel & Multicore Computing: 1.83
+AI Planning for Autonomy: 107.77
