@@ -19,9 +19,13 @@ from tracker import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user', views.usr),
-    path('show', views.show),
-    path('edit/<str:username>', views.edit),
-    path('update/<str:username>', views.update),
-    path('delete/<str:username>', views.destroy),
+    path('new_user', views.new_user),
+    path('show_user', views.show_user),
+    path('edit_user/<str:username>', views.edit_user),
+    path('update_user/<str:username>', views.update_user),
+    path('destroy_user/<str:username>', views.destroy_user),
+    path('show_skills/<str:username>', views.show_skills),
+    path('edit_skill/<str:username>/<str:skill_name>', views.edit_skill),
+    path('update_skill/<str:username>/<str:skill_name>', views.update_skill),
+    path('destroy_skill/<str:username>/<str:skill_name>', views.destroy_skill)
 ]

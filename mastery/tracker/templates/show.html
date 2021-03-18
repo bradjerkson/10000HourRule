@@ -26,8 +26,8 @@
         <td>{{ user.firstname }}</td>
         <td>{{ user.lastname }}</td>
         <td>
-            <a href="/edit/{{ user.username }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
-            <a href="/delete/{{ user.username }}">Delete</a>
+            <a href="/edit_user/{{ user.username }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a href="/destroy_user/{{ user.username }}">Delete</a>
         </td>
     </tr>
 {% endfor %}
@@ -35,6 +35,6 @@
 </table>
 <br>
 <br>
-<center><a href="/user" class="btn btn-primary">Add New Record</a></center>
+<center><a href="/new_user" class="btn btn-primary">Add New Record</a></center>
 </body>
 </html>

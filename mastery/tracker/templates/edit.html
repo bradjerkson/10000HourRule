@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 </head>
 <body>
-<form method="POST" class="post-form" action="/update/{{user.username}}">
+<form method="POST" class="post-form" action="/update_user/{{user.username}}">
         {% csrf_token %}
     <div class="container">
 <br>

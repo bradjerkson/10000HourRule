@@ -3,7 +3,7 @@ from tracker.forms import UserForm
 from tracker.models import User
 
 # Create your views here.
-def usr(request):
+def new_user(request):
     if request.method == "POST":
         form = UserForm(request.POST)
         if form.is_valid():
@@ -20,15 +20,15 @@ def usr(request):
         form = UserForm()
         return render(request, 'index.html', {'form':form})
 
-def show(request):
+def show_user(request):
     users = User.objects.all()
     return render(request, "show.html", {'users':users})
 
-def edit(request, username):
+def edit_user(request, username):
     user = User.objects.get(username=username)
     return render(request,'edit.html', {'user':user})
 
-def update(request, username):
+def update_user(request, username):
     user = User.objects.get(username=username)
     form = UserForm(request.POST, instance = user)
     if form.is_valid():
@@ -36,7 +36,19 @@ def update(request, username):
         return redirect("/show")
     return render(request, 'edit.html', {'user': user})
 
-def destroy(request, username):
+def destroy_user(request, username):
     user = User.objects.get(username=username)
     user.delete()
     return redirect("/show")
+
+def show_skills(request, username):
+    pass
+
+def edit_skill(request, username):
+    pass
+
+def update_skill(request, username):
+    pass
+
+def destroy_skill(request, username):
+    pass
