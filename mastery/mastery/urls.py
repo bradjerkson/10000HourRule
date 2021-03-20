@@ -18,6 +18,7 @@ from django.urls import path
 from tracker import views
 
 urlpatterns = [
+    path('', views.show_user),
     path('admin/', admin.site.urls),
     path('new_user', views.new_user),
     path('show_user', views.show_user),
@@ -25,7 +26,9 @@ urlpatterns = [
     path('update_user/<str:username>', views.update_user),
     path('destroy_user/<str:username>', views.destroy_user),
     path('show_skills/<str:username>', views.show_skills),
+    path('new_skill/<str:username>', views.new_skill),
     path('edit_skill/<str:username>/<str:skill_name>', views.edit_skill),
     path('update_skill/<str:username>/<str:skill_name>', views.update_skill),
-    path('destroy_skill/<str:username>/<str:skill_name>', views.destroy_skill)
+    path('destroy_skill/<str:username>/<str:skill_name>', views.destroy_skill),
+    path('oops', views.oops)
 ]

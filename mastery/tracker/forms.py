@@ -2,7 +2,7 @@ from django import forms
 from tracker.models import User
 from tracker.models import Skill
 
-
+#test
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
@@ -12,4 +12,4 @@ class UserForm(forms.ModelForm):
 class SkillForm(forms.ModelForm):
     class Meta:
         model = Skill
-        fields = "__all__"
+        fields = ['skill_name', 'skill_hours']

@@ -28,6 +28,8 @@
         <td>
             <a href="/edit_user/{{ user.username }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
             <a href="/destroy_user/{{ user.username }}">Delete</a>
+            <a href="/show_skills/{{ user.id }}">View Skills</a>
+            <a href="/new_skill/{{ user.id }}">Add Skills</a>
         </td>
     </tr>
 {% endfor %}

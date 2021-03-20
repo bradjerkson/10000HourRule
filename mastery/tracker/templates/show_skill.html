@@ -1,13 +1,41 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>10000 Hour Rule</title>
-    <script src="Scripts/jquery.min.js"></script>
-    <script src='Scripts/front.js'></script>
-  </head>
-  <body>
-    Show Skill
-  </body>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{skill.skill_username}} Skills</title>
+     {% load static %}
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+<table class="table table-striped table-bordered table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>Skill Name</th>
+        <th>Total SKill Hours</th>
+        <th>Tags</th>
+        <th>Attributes</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for skill in skills %}
+    <tr>
+        <td>{{ skill.skill_name }}</td>
+        <td>{{ skill.skill_hours }}</td>
+        <td>{{ skill.skill_username }}</td>
+        <td></td>
+        <td>
+            <a href="/edit_skill/{{ user.username }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a href="/destroy_skill/{{ user.username }}">Delete</a>
+        </td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+<br>
+{{skill_username}}
+<br>
+<center><a href="/new_skill/{{skill_username}}" class="btn btn-primary">Add New Skill</a></center>
+</body>
 </html>
